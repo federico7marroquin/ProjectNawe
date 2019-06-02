@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DispositivosBT">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:paddingLeft="40dp">
+
+            <ImageView
+                android:layout_width="82dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/smartphone" />
+
+            <TextView
+                android:layout_width="244dp"
+                android:layout_height="86dp"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="0dp"
+                android:text="Dispositivos vinculados"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <ListView
+        android:id="@+id/IdLista"
+        android:layout_width="wrap_content"
+        android:layout_height="341dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="127dp" />
+
+    <Button
+        android:id="@+id/salir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginBottom="79dp"
+        android:background="@drawable/register_button"
+        android:text="Salir" />
+
+    <Button
+        android:id="@+id/educación"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginBottom="78dp"
+        android:background="@drawable/register_button"
+        android:text="Educacion" />
+
+    <Button
+        android:id="@+id/IdMapaBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="279dp"
+        android:layout_marginBottom="81dp"
+        android:background="@drawable/register_button"
+        android:text="Mapa" />
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottomNavView_Bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="0dp"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@color/mav_item_color"
+        app:itemTextColor="@color/mav_item_color"
+        app:menu="@menu/nav_items"></android.support.design.widget.BottomNavigationView>
+
+</RelativeLayout>

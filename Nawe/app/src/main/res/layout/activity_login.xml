@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:layout_marginTop="-30dp"
+        android:background="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/IdLoginCorreo"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="53dp"
+        android:layout_marginLeft="53dp"
+        android:layout_marginTop="60pt"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="249dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:paddingBottom="20dp"
+        android:textColor="@android:color/darker_gray"
+        android:typeface="monospace" />
+
+    <EditText
+        android:id="@+id/IdLoginContraseña"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="53dp"
+        android:layout_marginLeft="53dp"
+        android:layout_marginTop="300pt"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="180dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingBottom="19dp"
+        android:textColor="@android:color/darker_gray"
+        android:typeface="monospace" />
+
+    <Button
+        android:id="@+id/IdBotonIngresar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="41dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/register_button"
+        android:text="Login" />
+
+
+    <Button
+        android:id="@+id/IdRegistroLogin"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/register_button"
+        android:text="Registrate" />
+
+</RelativeLayout>

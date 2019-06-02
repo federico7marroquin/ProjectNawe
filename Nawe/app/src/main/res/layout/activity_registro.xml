@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registro">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="244dp"
+                android:layout_height="86dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="0dp"
+                android:text="Registro de usuario"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/IdName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="60dp"
+                android:ems="10"
+                android:hint="Nombre"
+                android:inputType="textPersonName"
+                android:singleLine="false"
+                tools:layout_editor_absoluteX="15dp"
+                tools:layout_editor_absoluteY="86dp" />
+
+            <EditText
+                android:id="@+id/IdApellido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="40dp"
+                android:ems="10"
+                android:hint="Apellido"
+                android:inputType="textPersonName"
+                android:singleLine="true"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="157dp" />
+
+            <EditText
+                android:id="@+id/IdCorreo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="40dp"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                tools:layout_editor_absoluteX="15dp"
+                tools:layout_editor_absoluteY="307dp" />
+
+            <EditText
+                android:id="@+id/IdPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="40dp"
+                android:ems="10"
+                android:hint="Celular"
+                android:inputType="phone"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="232dp" />
+
+            <EditText
+                android:id="@+id/IdFecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="40dp"
+                android:ems="10"
+                android:hint="Fecha de nacimiento"
+                android:inputType="date"
+                tools:layout_editor_absoluteX="15dp"
+                tools:layout_editor_absoluteY="384dp" />
+
+            <EditText
+                android:id="@+id/IdContraseña"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="40dp"
+                android:ems="10"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="157dp" />
+
+            <EditText
+                android:id="@+id/IdContraseñaConfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="30dp"
+                android:ems="10"
+                android:hint="confirmar cotraseña"
+                android:inputType="textPassword"
+                tools:layout_editor_absoluteX="15dp"
+                tools:layout_editor_absoluteY="384dp" />
+
+            <Button
+                android:id="@+id/IdBotonRegistro"
+
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="80dp"
+                android:layout_marginBottom="20dp"
+                android:text="Registrate"
+                android:background="@drawable/register_button"
+
+                android:textAlignment="center" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

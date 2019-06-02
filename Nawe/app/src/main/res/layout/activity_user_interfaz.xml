@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserInterfaz">
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottomNavView_Bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="0dp"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@color/mav_item_color"
+        app:itemTextColor="@color/mav_item_color"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/nav_items"></android.support.design.widget.BottomNavigationView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/IdControl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="10dp"
+                android:text="Configuración de Pulsera"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/IdEncender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="30dp"
+                android:text="Conectar pulsera" />
+
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="326dp"
+                android:layout_height="37dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="30dp"
+                android:lineSpacingExtra="12sp"
+                android:text="Conectar Pulsera             "
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/IdBufferIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="15dp"
+                android:text="Conexión: "
+                android:textAlignment="textStart"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+
+            <Switch
+                android:id="@+id/switch3"
+                android:layout_width="328dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="30dp"
+                android:lineSpacingExtra="12sp"
+                android:text="Activar micrófono   "
+                android:textSize="18sp" />
+
+            <Switch
+                android:id="@+id/switch2"
+                android:layout_width="328dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="30dp"
+                android:lineSpacingExtra="12sp"
+                android:text="Alertar a usuarios cercanos            "
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="110dp"
+                android:layout_marginTop="35dp"
+                android:text="Agregar Contacto"
+                android:textSize="24sp" />
+            <EditText
+                android:id="@+id/IdNombrePulsera"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:hint="Nombre"
+                android:inputType="textPersonName"
+                android:paddingBottom="20dp"
+                android:textColor="@android:color/darker_gray"
+                android:typeface="monospace" />
+
+            <EditText
+                android:id="@+id/IdNumeroPulsera"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:hint="Número"
+                android:inputType="textPersonName|phone"
+                android:paddingBottom="20dp"
+                android:textColor="@android:color/darker_gray"
+                android:typeface="monospace" />
+
+
+            <EditText
+                android:id="@+id/IdMensaje"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:hint="Msm"
+                android:inputType="textMultiLine" />
+            <Switch
+                android:id="@+id/switch4"
+                android:layout_width="328dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="21dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:lineSpacingExtra="12sp"
+                android:text="Compartir ubicación GPS             "
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/IdAgregarContacto"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/register_button"
+
+                android:text="AGREGAR CONTACTO" />
+
+            <ListView
+                android:id="@+id/IdListaContactos"
+                android:layout_width="wrap_content"
+                android:layout_height="341dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="30dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
